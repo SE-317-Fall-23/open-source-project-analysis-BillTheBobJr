@@ -3,7 +3,7 @@
 ## Project Selected: pytest
 
 ## I. Introduction
-- Briefly introduce the purpose of this section, which is to provide a detailed description of two test cases in the selected open-source project.
+- The two tests I selected are in the test_stepwise package.  This test are specifcally for the --stepwise argument.  Using this argument will make it so you only run tests until you fail one, at which point you skip the rest of the tests.  Here I will go more indepth on two of the tests found in this package.
 
 ## II. Test Case 1: test_fail_and_continue_with_stepwise
 ### A. Description
@@ -11,10 +11,10 @@
 ### B. Gherkin Syntax (if applicable)
 - I chose not to use Gherkin Syntax
 ### C. Test Steps
-1.We run the predefined tests, forcing the second test to fail
-2.We analyze the tests, making sure no warnings/exceptions occur and only the first 2 tests execute and the third does not, where test 1 passes and test 2 fails
-3.We run the predefined tests again, this time making test 2 pass
-4.We analyze the tests, making sure no warnings/exceptions occur and the second and third test ran, both of which pass
+- We run the predefined tests, forcing the second test to fail
+- We analyze the tests, making sure no warnings/exceptions occur and only the first 2 tests execute and the third does not, where test 1 passes and test 2 fails
+- We run the predefined tests again, this time making test 2 pass
+- We analyze the tests, making sure no warnings/exceptions occur and the second and third test ran, both of which pass
 ### D. Code Segments Under Test
 - The runpytest function is what is being tested, specifically, when the --stepwise argument is used
 
